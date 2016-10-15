@@ -12,12 +12,12 @@
 
 if ( !defined('ABSPATH') ) exit; // Exit if accessed directly
 
-if ( !function_exists('starter_wordpress_plugin') ) {
+if ( !function_exists('plugin_name') ) {
 
-  function starter_wordpress_plugin() {
+  function plugin_name() {
     // Hello world!
   }
 
-  starter_wordpress_plugin();
+  plugin_name();
 
 }
