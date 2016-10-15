@@ -12,12 +12,38 @@
 
 if ( !defined('ABSPATH') ) exit; // Exit if accessed directly
 
-if ( !function_exists('plugin_name') ) {
+if ( !class_exists('PluginName') ) {
 
-  function plugin_name() {
-    // Hello world!
+  class PluginName {
+
+    /**
+     * Initialize plugin
+     */
+    public static function init() {
+
+      // non-admin page
+      if ( !is_admin() ) {
+        add_action( 'init', array('PluginName', 'hello_world_comment') );
+      }
+
+    }
+
+    /**
+     * Echoes the text "Hello world!"
+     */
+    public static function hello_world() {
+      echo 'Hello world!';
+    }
+
+    /**
+     * Echoes "Hello world!" code comment
+     */
+    public static function hello_world_comment() {
+      echo '<!-- Hello world! -->';
+    }
+
   }
 
-  plugin_name();
+  PluginName::init();
 
 }
