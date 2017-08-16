@@ -1,5 +1,5 @@
 # Starter WordPress Plugin
 
-### License
+## License
 
 Licensed under [MIT](LICENSE).
