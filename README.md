@@ -2,4 +2,4 @@
 
 ## License
 
-Licensed under [MIT](LICENSE).
+[MIT](https://opensource.org/licenses/MIT)
